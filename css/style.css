@@ -5,6 +5,10 @@ h1 {
 .favorite-website {
     color: lightseagreen;
 }
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
 div.developer {
     width: 200px;
     display: inline-block;
