@@ -1,28 +1,39 @@
 h1 {
-    font-style: italic;
-    text-align: center;
-  }
+  font-style: italic;
+  text-align: center;
+}
 .favorite-website {
-    color: lightseagreen;
+  color: lightseagreen;
 }
 .container {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  /*grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;*/
+  justify-content: center;
 }
 div.developer {
-    width: 200px;
-    display: inline-block;
-    border: 2px solid gray;
-    border-radius: 5px;
-    padding: 6px;
-    text-align: center;
+  width: 200px;
+  display: inline-block;
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 6px;
+  text-align: center;
 }
- .food {
-    width: 200px;
-    display: inline-block;
-    border: 2px solid gray;
-    border-radius: 5px;
-    padding: 6px;
-    text-align: center;
- }
+.container > * {
+  flex-basis: 15%;
+}
+.food {
+  text-align: center;
+  flex-basis: 90%;
+}
+.foodGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Horizontal centering */
+  align-items: center;
+  width: 200px;
+  border: 4px solid rgb(37, 202, 133);
+  border-radius: 5px;
+  padding: 6px;
+}
